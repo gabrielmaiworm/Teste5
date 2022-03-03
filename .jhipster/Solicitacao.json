@@ -1,0 +1,68 @@
+{
+  "applications": "*",
+  "changelogDate": "20220303153159",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "solicitacao",
+  "fields": [
+    {
+      "fieldName": "solicitante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "anonima",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "dataSolicitacao",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "enderecoEntrega",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "localDeEntrega",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dataAprovacao",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "aprovado",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "ativa",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Solicitacao",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "ligacao",
+      "otherEntityRelationshipName": "solicitacao",
+      "relationshipName": "ligacao",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "item",
+      "otherEntityRelationshipName": "solicitacao",
+      "relationshipName": "descricao",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "acao",
+      "otherEntityRelationshipName": "solicitacao",
+      "ownerSide": false,
+      "relationshipName": "acao",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

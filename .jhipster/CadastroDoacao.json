@@ -1,0 +1,80 @@
+{
+  "applications": "*",
+  "changelogDate": "20220303153158",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "cadastro_doacao",
+  "fields": [
+    {
+      "fieldName": "doacaoAnonima",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "realizaEntrega",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "dataDoacao",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "logradouro",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numero",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bairro",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cidade",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cep",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pais",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "complemento",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CadastroDoacao",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "ligacao",
+      "otherEntityRelationshipName": "cadastroDoacao",
+      "relationshipName": "ligacao",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "item",
+      "otherEntityRelationshipName": "cadastroDoacao",
+      "relationshipName": "descricao",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "acao",
+      "otherEntityRelationshipName": "cadastroDoacao",
+      "ownerSide": false,
+      "relationshipName": "acao",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

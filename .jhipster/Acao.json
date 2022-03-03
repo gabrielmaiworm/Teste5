@@ -1,0 +1,62 @@
+{
+  "applications": "*",
+  "changelogDate": "20220303153200",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "acao",
+  "fields": [
+    {
+      "fieldName": "dataAcao",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "usuarioCriacaoAcao",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pendente",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "dataExecucaoAcao",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "ativa",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "observacoes",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Acao",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "cadastroDoacao",
+      "otherEntityRelationshipName": "acao",
+      "ownerSide": true,
+      "relationshipName": "cadastroDoacao",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "solicitacao",
+      "otherEntityRelationshipName": "acao",
+      "ownerSide": true,
+      "relationshipName": "solicitacao",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "ligacao",
+      "otherEntityRelationshipName": "acao",
+      "ownerSide": true,
+      "relationshipName": "ligacao",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

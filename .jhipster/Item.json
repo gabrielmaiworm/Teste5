@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20220303153157",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "item",
+  "fields": [
+    {
+      "fieldName": "descricao",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "imagem",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "quantidade",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "categoriaItem",
+      "fieldType": "CategoriaItem",
+      "fieldValues": "ALIMENTO,ACESSIBILIDADE,ELETRODOMESTICO,FERRAMENTAS,HIGIENE,INFANTIL,INFORMATICA,LIMPEZA,LIVROS,MONETARIO,MOVEIS,PAPELARIA,SAUDE,UTILITARIO,VESTUARIO"
+    },
+    {
+      "fieldName": "unidadeMedida",
+      "fieldType": "UnidadeMedida",
+      "fieldValues": "CARTELA,CENTO,CENTIMETRO,CAIXA,DUZIA,EMBALAGEM,QUILOGRAMA,KIT,LITRO,METRO,METRO_CUBICO,PECA,TONELADA,UNIDADE,VALOR"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Item",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

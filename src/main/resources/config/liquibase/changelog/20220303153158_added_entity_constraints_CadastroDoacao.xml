@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity CadastroDoacao.
+    -->
+    <changeSet id="20220303153158-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="ligacao_id"
+                                 baseTableName="cadastro_doacao"
+                                 constraintName="fk_cadastro_doacao__ligacao_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ligacao"/>
+
+        <addForeignKeyConstraint baseColumnNames="descricao_id"
+                                 baseTableName="cadastro_doacao"
+                                 constraintName="fk_cadastro_doacao__descricao_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="item"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20220303153156",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "ligacao",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Ligacao",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "ligacao",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "acao",
+      "otherEntityRelationshipName": "ligacao",
+      "ownerSide": false,
+      "relationshipName": "acao",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "cadastroDoacao",
+      "otherEntityRelationshipName": "ligacao",
+      "relationshipName": "cadastroDoacao",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "solicitacao",
+      "otherEntityRelationshipName": "ligacao",
+      "relationshipName": "solicitacao",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

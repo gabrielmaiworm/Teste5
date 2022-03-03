@@ -48,6 +48,14 @@ public class CacheConfiguration {
             createCache(cm, org.com.biomob.domain.User.class.getName());
             createCache(cm, org.com.biomob.domain.Authority.class.getName());
             createCache(cm, org.com.biomob.domain.User.class.getName() + ".authorities");
+            createCache(cm, org.com.biomob.domain.CadastroUser.class.getName());
+            createCache(cm, org.com.biomob.domain.Ligacao.class.getName());
+            createCache(cm, org.com.biomob.domain.Ligacao.class.getName() + ".cadastroDoacaos");
+            createCache(cm, org.com.biomob.domain.Ligacao.class.getName() + ".solicitacaos");
+            createCache(cm, org.com.biomob.domain.Item.class.getName());
+            createCache(cm, org.com.biomob.domain.CadastroDoacao.class.getName());
+            createCache(cm, org.com.biomob.domain.Solicitacao.class.getName());
+            createCache(cm, org.com.biomob.domain.Acao.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
